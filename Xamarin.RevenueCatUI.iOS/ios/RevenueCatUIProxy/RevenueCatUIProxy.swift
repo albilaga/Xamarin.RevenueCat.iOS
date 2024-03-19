@@ -26,14 +26,14 @@ import RevenueCat
 
 
 // Delegate wrapper class
-class DelegatedPaywallViewControllerDelegate: PaywallViewControllerDelegate {
+public class DelegatedPaywallViewControllerDelegate: PaywallViewControllerDelegate {
     private let didFinishPurchasing: (CustomerInfo) -> Void
 
     init(didFinishPurchasing: @escaping (CustomerInfo) -> Void) {
         self.didFinishPurchasing = didFinishPurchasing
     }
 
-    func paywallViewController(_ controller: PaywallViewController, didFinishPurchasingWith customerInfo: CustomerInfo) {
+    public func paywallViewController(_ controller: PaywallViewController, didFinishPurchasingWith customerInfo: CustomerInfo) {
         didFinishPurchasing(customerInfo)
     }
 }

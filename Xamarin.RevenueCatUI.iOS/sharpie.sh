@@ -1,2 +1,3 @@
 #!/bin/bash
-sharpie bind --sdk=iphoneos17.4 -namespace Xamarin.RevenueCatUI.iOS --scope="Output/RevenueCatUIProxy.xcframework/ios-arm64/RevenueCatUIProxy.framework/Headers/" "Output/RevenueCatUIProxy.xcframework/ios-arm64/RevenueCatUIProxy.framework/Headers/RevenueCatUIProxy-Swift.h"
+#sharpie bind --sdk=iphoneos17.4 -namespace Xamarin.RevenueCatUI.iOS --scope="Output/Release-fat/RevenueCatUIProxy.framework/Headers/" "Output/Release-fat/RevenueCatUIProxy.framework/Headers/RevenueCatUIProxy-Swift.h"
+sharpie bind --sdk=iphoneos17.4 -namespace Xamarin.RevenueCatUI.iOS --scope="Output/Release-fat/RevenueCatUI.framework/Headers/" "Output/Release-fat/RevenueCatUIProxy.framework/Headers/RevenueCatUI-Swift.h"

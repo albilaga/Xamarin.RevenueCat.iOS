@@ -57,12 +57,12 @@
         <ObjcBindingCoreSource Include="Structs.cs" />
     </ItemGroup>
     <ItemGroup>
-        <NativeReference Include="Output\RevenueCatUIProxy.xcframework">
+        <NativeReference Include="Output\Release-fat\RevenueCatUIProxy.framework">
             <Kind>Framework</Kind>
-<!--            <Frameworks>Foundation UIKit RevenueCat</Frameworks>-->
+            <Frameworks>Foundation UIKit RevenueCat</Frameworks>
             <SmartLink>True</SmartLink>
             <ForceLoad>True</ForceLoad>
-<!--            <NeedsGccExceptionHandling>False</NeedsGccExceptionHandling>-->
+            <NeedsGccExceptionHandling>False</NeedsGccExceptionHandling>
 <!--            <IsCxx>False</IsCxx>-->
         </NativeReference>
         

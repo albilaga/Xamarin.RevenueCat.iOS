@@ -7,7 +7,6 @@ namespace Xamarin.RevenueCatUI.iOS
 {
 	// @interface RevenueCatUIProxy : NSObject
 	[BaseType (typeof(NSObject))]
-	[DisableDefaultCtor]
 	interface RevenueCatUIProxy
 	{
 		// +(void)presentPaywallFrom:(UIViewController * _Nonnull)topVC didFinishPurchasing:(void (^ _Nonnull)(RCCustomerInfo * _Nonnull))didFinishPurchasing;
